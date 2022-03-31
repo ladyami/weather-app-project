@@ -12,6 +12,11 @@ function showTemperature(response) {
   let wind = document.querySelector("#winds");
   wind.innerHTML = Math.round(response.data.wind.speed);
 }
+function onLoadSearch(city) {
+  let apiKey = "2a616ebfe6301993b4a745aa00dd9a26";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showTemperature);
+}
 function typeCity(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-city-input");
@@ -26,6 +31,8 @@ form.addEventListener("submit", typeCity);
 
 function currentTempInfo(event) {
   function showResult(response) {
+    let citys = document.querySelector("#city");
+    citys.innerHTML = response.data.name;
     let currentTemp = Math.round(response.data.main.temp);
     let tempDisplay = document.querySelector("#temp");
     tempDisplay.innerHTML = currentTemp;
@@ -48,6 +55,7 @@ function currentTempInfo(event) {
 
   navigator.geolocation.getCurrentPosition(retrievePosition);
 }
+onLoadSearch("Nigeria");
 let current = document.querySelector("#rent");
 current.addEventListener("click", currentTempInfo);
 

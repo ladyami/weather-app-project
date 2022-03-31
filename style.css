@@ -1,0 +1,16 @@
+ul {
+  word-spacing: 55px;
+}
+span {
+  word-spacing: 35px;
+}
+
+.card-text {
+  word-spacing: 173px;
+}
+.hours {
+  word-spacing: 150px;
+}
+.temp {
+  font-size: 30px;
+}

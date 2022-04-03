@@ -25,3 +25,8 @@ span {
 .descrip {
   text-transform: capitalize;
 }
+.units {
+  position: relative;
+  font-size: 13px;
+  top: -18px;
+}

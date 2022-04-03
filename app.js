@@ -11,6 +11,12 @@ function showTemperature(response) {
   realFeel.innerHTML = Math.round(response.data.main.feels_like);
   let wind = document.querySelector("#winds");
   wind.innerHTML = Math.round(response.data.wind.speed);
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 function onLoadSearch(city) {
   let apiKey = "2a616ebfe6301993b4a745aa00dd9a26";

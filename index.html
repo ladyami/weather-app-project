@@ -17,14 +17,14 @@
   <body>
     <div class="container">
       <div class="card-body">
-        <div class="card" style="width: 21rem">
+        <div class="card" style="width: 23rem">
           <form id="search-city">
             <div class="row">
               <div class="col-4">
                 <input
                   id="search-city-input"
                   type="text"
-                  placeholder="Type city"
+                  placeholder="Type City"
                   class="form-control"
                 />
               </div>
@@ -47,19 +47,20 @@
             </div>
           </form>
           <div class="card-body">
-            <div class="clearfix">
-              <h5 id="city" class="card-title"></h5>
-              <span class="temp" id="temp"> </span>
-              <span class="units">
-                <a href="#" id="celsius-link">°C</a>|<a
-                  href="#"
-                  id="fahrenheit-link"
-                  >°F</a
-                >
-              </span>
-              <small><span class="descrip" id="descrip"></span></small>
-              <h6></h6>
-            </div>
+            <h5 id="city" class="card-title"></h5>
+            <img src=".." class="float-left" id="icon" width="50px" />
+            <span class="temp" id="temp"> </span>
+            <span class="units">
+              <a href="#" id="celsius-link">°C</a>|<a
+                href="#"
+                id="fahrenheit-link"
+                >°F</a
+              >
+            </span>
+            <small><span class="descrip" id="descrip"></span></small>
+
+            <h6></h6>
+
             <span>Wind:</span> <strong> <span id="winds"></span></strong
             ><small>Km/h</small><br />
             <span>Humidity:</span>

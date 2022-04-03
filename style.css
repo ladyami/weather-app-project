@@ -12,7 +12,7 @@ span {
   word-spacing: 150px;
 }
 .temp {
-  font-size: 30px;
+  font-size: 40px;
 }
 .card {
   background: radial-gradient(
@@ -21,4 +21,7 @@ span {
     rgb(153, 202, 251) 100.2%
   );
   margin: 0 auto;
+}
+.descrip {
+  text-transform: capitalize;
 }

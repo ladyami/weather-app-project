@@ -29,4 +29,8 @@ span {
   position: relative;
   font-size: 13px;
   top: -18px;
+  text-decoration: none;
+}
+.source {
+  text-decoration: none;
 }

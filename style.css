@@ -12,14 +12,11 @@ span {
   word-spacing: 150px;
 }
 .temp {
-  font-size: 40px;
+  font-size: 50px;
 }
 .card {
-  background: radial-gradient(
-    1224px at 10.6% 8.8%,
-    rgb(255, 255, 255) 0%,
-    rgb(153, 202, 251) 100.2%
-  );
+  background: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+
   margin: 0 auto;
 }
 .descrip {
@@ -28,9 +25,22 @@ span {
 .units {
   position: relative;
   font-size: 13px;
-  top: -18px;
+  top: -25px;
   text-decoration: none;
 }
+
 .source {
+  text-decoration: none;
+}
+
+.active {
+  color: black;
+  text-decoration: none;
+  cursor: default;
+}
+#celsius-link {
+  text-decoration: none;
+}
+#fahrenheit-link {
   text-decoration: none;
 }

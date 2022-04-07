@@ -134,3 +134,26 @@ function toDaysDate(date) {
 }
 let h6 = document.querySelector("h6");
 h6.innerHTML = `${toDaysDate(currentTime)}`;
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#weather-forecast");
+  let forecastHTML = `<ul class="list-group list-group-flush">`;
+  let days = ["Thursday", "Friday", "Saturday", "Sunday", "Monday"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` <li class="list-group-item" id="forecast">
+                <span class="weather-forecast-date">${day} </span>
+                <img src="icon.png" alt="" width="30px" />
+                <span class="warp">
+                <span class="weather-forecast-temp-max">18°</span>
+                <span class="weather-forecast-temp-min">12°</span>
+                </span>
+              </li>
+            `;
+  });
+
+  forecastHTML = forecastHTML + `</ul>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+displayForecast();

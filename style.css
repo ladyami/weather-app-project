@@ -1,16 +1,10 @@
 ul {
-  word-spacing: 55px;
+  word-spacing: 35px;
 }
 span {
   word-spacing: 35px;
 }
 
-.card-text {
-  word-spacing: 173px;
-}
-.hours {
-  word-spacing: 150px;
-}
 .temp {
   font-size: 50px;
 }
@@ -43,4 +37,15 @@ span {
 }
 #fahrenheit-link {
   text-decoration: none;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  color: #000;
+  opacity: 0.5;
+}
+.weather-forecast-temp-max {
+  font-size: 13px;
+}
+.weather-forecast-temp-min {
+  opacity: 0.5;
 }

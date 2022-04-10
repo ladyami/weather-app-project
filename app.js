@@ -68,29 +68,6 @@ onLoadSearch("Nigeria");
 let current = document.querySelector("#rent");
 current.addEventListener("click", currentTempInfo);
 
-function showTemperatureInFahrenheit(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temp");
-  let FahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(FahrenheitTemperature);
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-}
-
-function showTemperatureInCelsius(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temp");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-}
-celsiusTemperature = null;
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", showTemperatureInCelsius);
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", showTemperatureInFahrenheit);
-
 let currentTime = new Date();
 function toDaysDate(date) {
   let days = [
